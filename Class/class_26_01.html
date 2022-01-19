@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="text/javascript"
+      src="javascript/class_26_Form_validations_01.js"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <form onsubmit="return validate()" action="class_26_02.html">
+      <input id="uname" placeholder="Username" type="text" /><br /><br />
+      <input id="pass" placeholder="Password" type="password" />
+      <br />
+      <br />
+      <button type="submit">Submit</button>
+      <!-- onclick="validate()" is not the way because these attribute will apply when we click and after using fuction it will go to the another page but we want to go to another page if user dint write text in input element so to solve this problems we use 'onsubmut' in form tag
+      in which action will apply only after onsubmit -->
+    </form>
+  </body>
+</html>

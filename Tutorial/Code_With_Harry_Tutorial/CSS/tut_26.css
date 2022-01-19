@@ -1,0 +1,245 @@
+* {
+  margin: 0px;
+}
+
+body {
+  background-color: #f0f1f5;
+}
+
+/* Navigation editing */
+/* ------------------------- */
+#navigation_id {
+  width: 100%;
+  height: 45px;
+  background-color: black;
+  opacity: 0.8;
+}
+
+#navigation_ul {
+  color: white;
+  list-style: none;
+  display: inline-block;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: -15px;
+  font-weight: 600;
+}
+
+#Magic_Note {
+  display: inline-block;
+}
+
+#Home {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#nav_search {
+  position: absolute;
+  left: 80vw;
+  border-radius: 5px;
+  height: 25px;
+  margin-top: -27px;
+}
+
+#nav_search::placeholder {
+  padding-left: 7px;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#nav_submit {
+  border-color: #3eb9b4;
+  border-radius: 3px;
+  border-width: 1px 2px 2px 1px;
+  background-color: black;
+  position: absolute;
+  left: 94vw;
+  color: #3eb9b4;
+  background-color: #08131d;
+  height: 25px;
+  margin-top: -24px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body of the page */
+
+#title_tag {
+  font-size: small;
+}
+
+#main {
+  position: relative;
+  display: inline-block;
+  left: 24vw;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 20px;
+}
+
+#Add_title {
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#Add_Note {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+#title_tag {
+  position: relative;
+}
+
+.add_textarea_class {
+  width: 700px;
+}
+
+#textarea1 {
+  resize: none;
+  margin: 0px 10px 10px 10px;
+  width: 674px;
+  height: 26px;
+  border-radius: 4px;
+  padding-top: 10px;
+  font-size: large;
+  padding-left: 10px;
+  font-weight: 500;
+}
+
+#textarea2 {
+  resize: none;
+  margin: 0px 10px 0px 10px;
+  width: 674px;
+  height: 61px;
+  border-radius: 4px;
+  padding-top: 10px;
+  font-size: large;
+  padding-left: 10px;
+  font-weight: 500;
+}
+
+#Add_notes_submit {
+  margin: 0px 0px 15px 10px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: #3f73ca;
+  color: white;
+  border-width: 0px;
+}
+
+#data_input {
+  border: 1px solid #d8d0d0;
+  background-color: white;
+  border-radius: 7px;
+  width: 711px;
+}
+
+#note_data {
+  font-size: small;
+}
+
+.Horizontal_line1 {
+  width: calc(100% - 25px);
+  margin: 10px;
+  border: 1px solid #dacece;
+}
+
+/* data */
+
+/* @keyframes showdata {
+  0% {
+    width: 0px;
+    height: 0px;
+    margin: 80px 80px 20px 80px;
+  }
+  100% {
+    width: 213px;
+    height: 169px;
+    margin: 20px 10px 20px 10px;
+  }
+} */
+
+.Show_data {
+  width: 213px;
+  height: 169px;
+  background-color: white;
+  margin: 20px 10px 20px 10px;
+  display: inline-block;
+  padding: 3px 20px 20px 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  box-shadow: 0px 0px 12px 3px #dac9c9;
+  /* border: 1px solid red; */
+  /* animation-name: showdata;
+  animation-duration: 1s; */
+  overflow: hidden;
+}
+
+.data_title {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  margin-bottom: 2px;
+  display: inline-block;
+}
+
+.data_title_name {
+  font-size: 15px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: inline-block;
+  white-space: nowrap;
+  /* visibility: hidden; */
+}
+
+.div_data_title_name {
+  /* position: relative; */
+  position: absolute;
+  display: inline-block;
+  padding-left: 5px;
+  width: 120px;
+  overflow: hidden;
+
+  /* left: 55px;
+  bottom: 24px; */
+}
+
+.data_note {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+}
+
+.note_content {
+  border: 1px solid #d6c6c6;
+  border-radius: 5px;
+  height: 77px;
+  text-align: start;
+  overflow-y: auto;
+  box-shadow: 0px 0px 10px 0px #dac9c9;
+}
+.data_contect {
+  padding-left: 5px;
+  font-size: small;
+  font-family: "Courier New", Courier, monospace;
+  text-indent: 40px;
+}
+
+.delete_notes_submit {
+  margin: 7px 0px 5px -7px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: #3f73ca;
+  color: white;
+  border-width: 0px;
+}
+
+.creating_div {
+  display: inline-block;
+}
+
+.create_data {
+  width: 702px;
+  height: 205px;
+  overflow: hidden;
+}

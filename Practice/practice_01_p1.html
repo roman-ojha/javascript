@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/Javascript" src="Javascript/practice_01.js"></script>
+  </head>
+  <body>
+    <input id="uname" type="text" placeholder="UserName" />
+    <label id="unamelbl" style="color: red; visibility: hidden">Invalid</label>
+    <br />
+    <br />
+    <input id="pass" type="password" placeholder="Password" />
+    <label id="passlbl" style="color: red; visibility: hidden">Invalid</label>
+    <br />
+    <br />
+    <input onclick="submit()" type="submit" value="Submut" />
+    <br />
+    <br />
+    <hr />
+    <h3 id="showuname" style="color: red; visibility: hidden">Username=</h3>
+    <h3 id="showpass" style="color: red; visibility: hidden">Password=</h3>
+    <form
+      id="form"
+      onsubmit="return login()"
+      action="practice_01_p2.html"
+      style="visibility: hidden"
+    >
+      <center>
+        <p id="please">
+          <b>Please enter code to login:</b>
+        </p>
+        <input id="enter" type="password" /><br /><br />
+        <button
+          type="submit"
+          style="background-color: darkmagenta; color: white"
+        >
+          Log In
+        </button>
+      </center>
+    </form>
+  </body>
+</html>

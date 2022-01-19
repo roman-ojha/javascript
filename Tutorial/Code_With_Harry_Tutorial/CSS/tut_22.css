@@ -1,0 +1,169 @@
+* {
+  margin: 0px;
+}
+
+/* Navbar--------------------------------------------- */
+.navbar {
+  width: 100%;
+  height: 65px;
+  background-color: #32303099;
+  display: flex;
+  align-items: center;
+}
+#navbar_magic_notes_text {
+  color: white;
+  margin: 0px 30px 0px 20px;
+}
+#navbar_home_text {
+  color: white;
+}
+#navbar_search_area {
+  position: absolute;
+  right: 100px;
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border-width: 0px;
+}
+#navbar_search_area:focus {
+  outline: none;
+}
+#navbar_search_area:read-write {
+  padding-left: 15px;
+  font-size: 15px;
+}
+
+#navbar_search_button {
+  position: absolute;
+  right: 15px;
+  width: 80px;
+  height: 30px;
+  border-width: 5px;
+  border-radius: 5px;
+  background-color: #0000004f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: cornflowerblue;
+}
+#navbar_search_button::selection {
+  color: none;
+  background-color: transparent;
+}
+
+/* content body-------------------------------------------------- */
+:root {
+  --border_color-: rgb(216, 212, 212);
+  --button_color-: rgb(37, 100, 194);
+  --button_hover_color: rgb(74, 126, 202);
+}
+#main_body_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome_to_magic_notes_text {
+  color: black;
+  font-size: 30px;
+  font-family: cursive;
+  margin-top: 15px;
+}
+#Add_a_Note_outside {
+  width: 900px;
+  height: 150px;
+  border: 2px solid var(--border_color-);
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+}
+#add_a_note_text {
+  color: black;
+  font-weight: 600;
+}
+#add_note_inside {
+  width: 98%;
+  height: 50%;
+  border: 1px solid var(--border_color-);
+  border-radius: 5px;
+  resize: none;
+}
+#add_note_inside:focus {
+  outline: none;
+}
+#add_note_inside:read-write {
+  padding: 5px 10px 5px 10px;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#add_note_button {
+  color: white;
+  width: 90px;
+  height: 40px;
+  background-color: var(--button_color-);
+  border-radius: 5px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 200ms;
+}
+#add_note_button:hover {
+  background-color: var(--button_hover_color);
+}
+#add_note_button::selection {
+  background-color: transparent;
+}
+#your_notes_container {
+  display: flex;
+  width: 950px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+#your_notes_text {
+  color: black;
+  font-family: cursive;
+}
+.added_note_container {
+  width: 240px;
+  height: auto;
+  border: 1px solid var(--border_color-);
+  margin: 20px;
+  border-radius: 5px;
+  padding: 15px;
+}
+.added_note_container_first {
+  visibility: hidden;
+}
+.note_count {
+  font-weight: bold;
+}
+.note {
+  color: black;
+  padding-top: 5px;
+}
+.delete_note_button {
+  width: 100px;
+  height: 30px;
+  background-color: var(--button_color-);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition-property: background-color;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+.delete_note_button:hover {
+  background-color: var(--button_hover_color);
+}
+
+.delete_note_button::selection {
+  background-color: transparent;
+}

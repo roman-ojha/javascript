@@ -1,0 +1,10 @@
+let container = document.querySelector("div.container");
+let a = container.children[1].nodeType;
+a = container.childNodes[0].nodeType;
+a = container.children[1].children[0].children[1];
+a = container.firstElementChild;
+a = container.lastElementChild;
+a = container.firstElementChild.nextElementSibling.nextElementSibling;
+console.log(a);
+let heading = document.querySelector("#heading");
+console.log(heading.parentElement.parentNode.parentNode.parentNode.parentNode);

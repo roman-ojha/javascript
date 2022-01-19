@@ -1,0 +1,153 @@
+:root {
+  --Facebook-: rgb(38, 151, 204);
+  --Youtube-: #d1df5a;
+  --Notion-: hsla(129, 45%, 60%, 0.7);
+  --Google-: hsl(315, 52%, 61%);
+  --Gitgub-: rgba(57, 197, 44, 0.541);
+}
+
+#Heading {
+  color: rgb(85, 62, 216);
+  font-size: 40px;
+  border: 1px solid red;
+  text-align: center;
+}
+
+#Heading:hover {
+  background-color: blueviolet;
+  cursor: pointer;
+}
+#Heading:active {
+  background-color: red;
+  cursor: grabbing;
+}
+
+#orderList {
+  font-size: 40px;
+  list-style-type: disc;
+  margin-top: -10px;
+  margin-bottom: 5px;
+  list-style-type: none;
+  margin-left: -40px;
+}
+
+.child:first-child {
+  background-color: var(--Facebook-);
+}
+.child:last-child {
+  background-color: var(--Gitgub-);
+}
+.child:nth-child(2) {
+  background-color: var(--Youtube-);
+}
+.child:nth-child(3) {
+  background-color: var(--Notion-);
+}
+.child:nth-last-child(2) {
+  background-color: var(--Google-);
+}
+
+.child {
+  border: 1px solid yellow;
+  text-shadow: 2px 2px 7px black;
+}
+
+.anchor {
+  text-decoration: none;
+}
+
+.anchor:link {
+  display: block;
+  text-align: center;
+  font-family: "Viaoda Libre", cursive;
+}
+
+.anchor:visited {
+  display: block;
+  background-color: red;
+}
+
+.anchor:hover {
+  display: block;
+  background-color: white;
+  font-family: "Stint Ultra Condensed", cursive;
+  letter-spacing: 5px;
+  font-size: 50px;
+}
+
+.anchor:active {
+  background-color: saddlebrown;
+  color: black;
+}
+
+#container {
+  background-image: url("images/Yellow_and_pen.jpg");
+  /* background-position: center; */
+  background-position: center;
+  border-style: dotted double dashed solid;
+  border-width: 10px;
+  border-color: indianred darkcyan lightgreen darkmagenta;
+  border-right-color: darkorchid;
+  border-radius: 40px;
+  height: 630px;
+  width: 99%;
+  padding: 0px 50px 0px 50px;
+  margin: 10px;
+  box-sizing: border-box;
+  background-position: -200px;
+}
+
+#content {
+  /* background-color: rgb(221, 80, 127); */
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(190, 132, 23),
+    rgb(147, 212, 41),
+    rgb(5, 124, 5)
+  );
+  border: 1px solid yellowgreen;
+  border-radius: 10px;
+  font-size: 20px;
+  /* text-transform: capitalize; */
+  /* text-transform: uppercase; */
+  /* text-align: justify; */
+  text-align: center;
+  /* text-align: end; */
+  /* text-align: left; */
+  text-decoration: underline;
+  letter-spacing: 2px;
+  line-height: 25px;
+  word-spacing: 10px;
+  text-shadow: 2px 2px 4px rgb(92, 93, 156);
+  /* writing-mode: vertical-lr; */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-variant: small-caps;
+  box-shadow: 7px 7px 20px black, -7px -7px 20px rgb(190, 1, 1);
+  margin-top: 40px;
+}
+
+#content::selection {
+  background: lightgoldenrodyellow;
+  color: darkmagenta;
+}
+
+#content:hover {
+  border: 1px solid yellowgreen;
+  margin-left: -5px;
+  margin-top: 35px;
+  width: 1230px;
+  height: 160px;
+  box-shadow: 7px 7px 20px rgb(18, 73, 5), -7px -7px 20px rgb(172, 11, 131);
+  opacity: 0.95;
+  cursor: pointer;
+}
+#content:active {
+  border: 1px solid yellowgreen;
+  margin-left: 0px;
+  margin-top: 40px;
+  width: 1220px;
+  height: 150px;
+  box-shadow: 5px 5px 20px rgb(18, 73, 5), -5px -5px 20px rgb(172, 11, 131);
+  opacity: 0.95;
+  cursor: grab;
+}

@@ -1,0 +1,7 @@
+.textarea {
+  box-sizing: border-box;
+}
+.textarea:read-write {
+  padding-left: 10px;
+  font-size: 25px;
+}
