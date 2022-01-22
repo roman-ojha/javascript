@@ -52,4 +52,3 @@ import { camelCase } from "change-case";
 
 const myString = "this is the string";
 document.getElementById("noId").innerText = camelCase(myString);
-console.log("hello");
