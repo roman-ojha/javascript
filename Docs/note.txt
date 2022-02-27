@@ -1,0 +1,6 @@
+*) Copy text to clipboard = navigator.clipboard.writeText(url);
+
+*) Javascript Extention:
+    -> .js
+    -> .mjs
+    -> .cjs
