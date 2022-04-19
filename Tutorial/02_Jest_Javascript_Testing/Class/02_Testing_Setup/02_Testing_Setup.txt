@@ -16,3 +16,7 @@
     -> https://jestjs.io/docs/getting-started
     -> https://github.com/facebook/jest
     -> npm install --save-dev jest
+    -> now inside package.json:
+        -> "scripts": {
+                "test": "jest"
+            },
