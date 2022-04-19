@@ -1,0 +1,9 @@
+*) E2E Test:
+    -> for this we need the another package:
+    -> npm install --save-dev puppeteer
+    -> now inside package.json:
+        -> "scripts": {
+                "test-w": "jest --watch --detectOpenHandles"
+            },
+    -> this is a headless version of chrome browser, so it is basically a browser we can use interact with dom
+    -> and we define steps that should be executed in that browser so that we can automate certain processes on our web page and then of course test a result of these processes as well
