@@ -1,0 +1,21 @@
+*) Why Test
+    -> Get an error if you break code
+    -> Save time
+    -> Think about possible issues & bugs
+    -> Integrated into build workflow
+    -> Break up complex dependencies
+    -> Improve you code
+
+*) Type of test?
+    1) Unit Test:
+        -> Fully Isolated test:
+            -> EX: testing one function 
+        -> Write Thousands of these test
+    2) Integration Test:
+        -> With Dependencies
+            -> EX: Testing a function that calls a function
+        -> Write a good couple of these test
+    3) End-To-End(E2E) Tests
+        -> Full Flow,User Interface test, Testing Full application or the part of the full application
+            ->EX: validating a the Dom after a click
+        -> Write a few of these
