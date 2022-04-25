@@ -1,1 +1,1 @@
-[<img src="./Docs/cheatSheets.png" alt="CheatSheets">](./Docs/cheatSheets.png)
+[<img src="./Docs/cheatSheets.png" alt="CheatSheets" width="100%">](./Docs/cheatSheets.png)
