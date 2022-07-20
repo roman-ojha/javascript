@@ -43,4 +43,13 @@ const z = x();
 // so now 'z' content the 'y' function
 // but when we are calling function 'x' and again function 'y' is inside that function 'x' until 'x' return value 'y' will be in the lexical scope of the function 'x'
 // but when we return 'y' from 'x' then it no longer reside inside 'x'
+// so now 'z' will contain the reference of 'y' function
+// now if we will call the function 'z' then in that function we are accessing variable 'a' but we know that 'a' is not in the scope of function 'y' when 'y' is inside the lexical scope of the function 'x' then we are being able to access the variable 'a'
+// but also when we will return function 'y' and assign the reference to 'z' the value of 'a' after calling function 'z' will be 10
+// this is where closures come into picture so when we are returning function from the another function they still maintains their lexical scope, so they remember where they were actually present
+// though 'x' know longer exist after it return but still this 'y' function remembers its lexical scope where it came
+// so wherever we will return function not just the code inside the function will get return but the closure get return
+// that closure enclosed that return function along with its lexical scope
+// NOTE: so we can say that closure is function along with its lexical scope bundle together forms a closure
 console.log(z);
+z();
