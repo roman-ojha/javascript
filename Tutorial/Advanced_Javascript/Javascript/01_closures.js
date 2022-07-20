@@ -86,3 +86,13 @@ function z() {
 }
 // ================================
 z();
+
+// User case of Closures:
+// - Module Design Pattern
+// - Currying
+// - Function like once
+// - memoize
+// - maintaining state in async world
+// - setTimeouts
+// - Iterators
+// - and many more...
