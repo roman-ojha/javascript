@@ -31,7 +31,6 @@ x();
         }
     }
 */
-
 function x() {
   var a = 10;
   function y() {
@@ -39,7 +38,7 @@ function x() {
   }
   return y;
 }
-const z = x();
+var z = x();
 // so now 'z' content the 'y' function
 // but when we are calling function 'x' and again function 'y' is inside that function 'x' until 'x' return value 'y' will be in the lexical scope of the function 'x'
 // but when we return 'y' from 'x' then it no longer reside inside 'x'
@@ -52,4 +51,38 @@ const z = x();
 // that closure enclosed that return function along with its lexical scope
 // NOTE: so we can say that closure is function along with its lexical scope bundle together forms a closure
 console.log(z);
+z();
+
+// More Example:
+function x() {
+  var a = 10;
+  function y() {
+    console.log(a);
+  }
+  a = 100;
+  //   so here changed the value of 'a' before returning 'y', then when we will call the function 'z' which will contain the reference of function 'y' the value of the variable 'a' will be 100
+  // because when we will return 'y' it comes along with it lexical scope so 'a' doesn't refer to the value '10' but the reference of that variable value
+  // so when we will call the function 'z' it will try to find the reference value of 'a' stored inside the memory and now when we are calling 'z' the reference of 'a' stored the value 100
+  // NOTE: so when we will return the function which contain the closures then that closures where all the variable come inside like 'a' wouldn't get garbage collected when are are returning from the function 'x'
+  // it means that the reference of the variable 'a' will stay there inside the memory because function 'y' is being return which access the value 'a' which is in the scope of 'x' now which form the closure so we might call the function 'y' after it get returned so it has to store all the required values
+  return y;
+}
+var z = x();
+
+// More Example:
+// ===========Closure Scope==================
+function z() {
+  var b = 30;
+  function x() {
+    var a = 10;
+    function y() {
+      console.log(a, b);
+      // now here we are trying to access the variable of parent scope and also parent parent scope
+      // so now 'y' form the closures with scope of 'x' and 'z'
+    }
+    y();
+  }
+  x();
+}
+// ================================
 z();
