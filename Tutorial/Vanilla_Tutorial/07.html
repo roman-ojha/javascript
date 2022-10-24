@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+      }
+      h1 {
+        font-size: 60px;
+        color: coral;
+      }
+      #notification_button {
+        width: 200px;
+        height: 100px;
+        border-radius: 20px;
+        outline: none;
+        border-width: 0;
+        background-color: cornflowerblue;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Desktop Notification</h1>
+    <input
+      type="submit"
+      id="notification_button"
+      value="Show Notification"
+      onclick="showNotification()"
+    />
+    <script src="Javascript/07_Show_Desktop_Notification.js"></script>
+  </body>
+</html>
