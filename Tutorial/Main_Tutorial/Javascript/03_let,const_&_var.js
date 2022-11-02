@@ -1,4 +1,4 @@
-  console.log("tut3");
+console.log("tut3");
 // Variables in js
 // var, let, const ->these are use to make variable
 var name = "harry"; //-> if you will make a variable and assigh a value like ("value") then it will be a string
