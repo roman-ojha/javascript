@@ -21,6 +21,10 @@
 // where we don't know how that had create their script
 
 // Example 02:
+// we can even pass argument into immediately invoked function and that argument will take by the anonymous function parameter
+(function (a, b) {
+  console.log(a + b);
+})(5, 6);
 
 // Example 03:
 (function () {
@@ -34,3 +38,18 @@
   // so rather then just putting this script as global state we will use immediately invoked function expression and anonymous function
   // which will solve that error
 })();
+
+// Example 04:
+const abc = (() => {
+  // this console will get run when it is being declared
+  // because this block of code is inside the immediately invoked function expression
+  console.log("from ktm");
+
+  // but we are also returning the value
+  // to assign that return value we will use 'abc'
+  // and also we are return the function, it means that 'abc' is the function which take 'a', and 'b'
+  return function xyz(a, b) {
+    return a + b;
+  };
+})();
+console.log(abc(1, 5));
