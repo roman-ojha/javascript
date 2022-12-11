@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
       type="text/javascript"
-      src="javascript/class_28_regular_expression.js"
+      src="javascript/27_Form_validations_02.js"
     ></script>
     <title>Document</title>
   </head>
   <body>
-    <form>
+    <form onsubmit="return validate()" action="class_26_02.html">
       <input id="uname" placeholder="Username" type="text" />
       <label id="lbluname" style="color: red; visibility: hidden"
-        >Invalid Username</label
+        >Invalid</label
       >
+      <br /><br />
+      <input id="pass" placeholder="Password" type="password" />
       <br />
       <br />
-      <button onclick="validate()">Submit</button>
+      <button type="submit">Submit</button>
     </form>
   </body>
 </html>

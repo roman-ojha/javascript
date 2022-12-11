@@ -17,7 +17,7 @@ function zoomIn() {
   }
 }
 
-fwwunction decrease() {
+function decrease() {
   clearInterval(ID);
   ID = setInterval(zoomOut, 20);
 }
