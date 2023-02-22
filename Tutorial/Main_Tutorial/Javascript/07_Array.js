@@ -1,4 +1,30 @@
-console.log("We are in tut7.js and lets discuss about arrays");
+// Creating array using new new keyword
+var newArray = new Array();
+// Three way to make & adding value to an array
+// 1. Conventional array
+newArray[0] = "Roman";
+newArray[1] = "Jack";
+newArray[2] = "Razz";
+// we can even preset the length of the array while creating new array
+var myCars = new Array(3);
+myCars[0] = "Ferrari";
+myCars[1] = "BMW";
+myCars[2] = "Audi";
+
+// 2. Condensed Array
+// It allows we to combine the array and array elements definitions into one step.
+var myCars2 = new Array("Audi", "Ferrari", "BMW");
+
+// 3. Literal Array
+var myCars3 = ["Audi", "Ferrari", "BMW"];
+// Also we can define literal array with undefined values as
+var myCars = ["Audi", , , "Ferrari", "BMW"];
+// Here array myCars have 5 elements where middle 3 are undefined values
+// To create array elements with an initial undefined value just enter a comma (,)
+
+// Multi-dimensional array:
+var myCars = [["Audi Q4 e-tron", "Audi Q3", "Audi Q7"], "Ferrari", "BMW"];
+
 let marks = [34, 23, 24, 93, 73, 25];
 const fruits = ["Orange", "Apple", "Pineapple"];
 const mixed = ["str", 89, [3, 5]];
@@ -19,33 +45,23 @@ let value = marks.indexOf(73); // -> by using this you can find the index of any
 // console.log(value)
 
 // Mutating or Modifying arrays
-// marks.push(3564); // -> this will going to add value in last index
+let arr = ["abc"];
+arr.toString(); // convert array into string
+marks.push(3564); // -> this will going to add value in last index
 // another way to do is :
-// marks[6]=56;// or marks[marks.length]= 56// is marks array there is not a 6 no. index so we are putting data to index 6 array
+marks[6] = 56; // or marks[marks.length]= 56// is marks array there is not a 6 no. index so we are putting data to index 6 array
 // console.log(marks);
-// marks.unshift(1009); // ->this will going to put the value in first index
-// marks.pop() // -> this will remove the last index value
-// marks.shift() // -> this will remove the first index value
-// marks.unshift(45)//-> this will going to add 45 number in first index of an  array
-// marks.splice(2, 3); // -> splice(from where to remove,how much element to remove)
-// marks.join("-"); // -> it will going to join all the array items by -
-// marks.reverse() // -> array will be reverse after using this
+marks.unshift(1009); // ->this will going to put the value in first index
+marks.pop(); // -> this will remove the last index value
+marks.shift(); // -> this will remove the first index value
+marks.unshift(45); //-> this will going to add 45 number in first index of an  array
+marks.splice(2, 3); // -> splice(from where to remove,how much element to remove)
+marks.join("-"); // -> it will going to join all the array items by -
+marks.reverse(); // -> array will be reverse after using this
 // this method will going to change the original array
 let marks2 = [1, 2, 3, 7];
 marks = marks.concat(marks2); // -> this will going to add the array of marks2 to the marks
 // console.log(marks);
-
-// making object
-let myobj = {
-  "first name": "harry",
-  channel: "CodeWithHarry",
-  isActive: true,
-  marks: [1, 5, 3, 6],
-};
-// myobj.channel = "roman"; // you can change object value
-console.log(myobj);
-console.log(myobj["channel"]); // ->this is also the way to access
-console.log(myobj.channel);
 
 // if you want to add two array:
 
@@ -78,27 +94,3 @@ for (let i = 0; i < 10; i++) {
   array1.push(i);
 }
 console.log(array1);
-
-// for loop for an object
-let obj1 = {
-  name: "Roman",
-  number: 13,
-  laguage: "javescript",
-  string: "This is the string",
-};
-for (let i = 0; i < Object.keys(obj1).length; i++) {
-  const element = Object.keys(obj1)[i];
-  console.log(element);
-  const values = obj1[Object.keys(obj1)[i]];
-  console.log(values);
-}
-
-// creatin an object in different method
-
-let obj2 = {};
-obj2["name"] = "Roman ojha";
-obj2["Number"] = 12;
-obj2["fun1"] = function () {
-  return 1;
-};
-console.log(obj2);
