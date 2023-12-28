@@ -4,3 +4,13 @@
     -> .js
     -> .mjs
     -> .cjs
+    
+
+*)
+    *> value1 && value2
+        -> return value2 if value1 is true
+    *> value1 ?? value2
+        -> return value1 if exist or return value2
+    *> value1 | value2
+    *> value1 === value2
+        -> return true if both value and type are same
